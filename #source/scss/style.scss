@@ -1,0 +1,221 @@
+// Файл обнуляющих стилей
+@import 'null.scss';
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+// Code...
+*{
+    font-family: Poppins;
+}
+.firstpage {
+    background-color: #F1F1F1;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header {
+    padding: 46px 0;
+    display: flex;
+}
+.logo {
+}
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    ul{
+        gap: 50px;
+        display: flex;
+    }
+    ul li a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+        &:hover{
+            color: #606060;
+        }
+    }
+}
+// ------------------------------------------------------------------
+
+.firstpage__content {
+    display: flex;
+}
+.hello {
+    margin-right: 194px;
+    margin-top: 154px;
+}
+.hello__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 66px;
+    
+    color: #000000;
+    margin-bottom: 20px;
+}
+.hello__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    /* or 28px */
+    
+    
+    color: #000000;}
+.man {
+}
+// ------------------------------------------------------------------
+.skills {
+    display: flex;
+    background-color: white;
+}
+.container__skills {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+}
+.card {
+    margin: 90px 0;
+}
+.card__title {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.card__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: #000000;
+}
+// ------------------------------------------------------------------
+.portfolio {
+    background-color: #F1F1F1;
+}
+.portfolio__container {
+    max-width: 930px;
+    margin: 0 auto;
+}
+.portfolio__card {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 90px;
+    a{
+        padding-top: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #070707;
+    }
+}
+.portfolio__text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+    color: #070707;
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+// ------------------------------------------------------------------
+.footer {
+}
+.footer__container {
+    padding-top: 90px;
+    max-width: 342px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+}
+.footer__content {
+    h1{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 51px;
+        text-align: center;
+        color: #070707;
+    }
+    h3{
+        padding-top: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #070707;
+        padding-bottom: 40px;
+    }
+    .send-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 180.5px;
+        height: 42px;
+        background-color: black;
+        margin-bottom: 80px;
+    }
+    h5{
+        padding-top: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        
+        color: #828282;
+        text-align: center;
+    }
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+// ANIMATIONS ----
+
+.portfolio__card img{
+    transform: scale(1, 1);
+    
+    transition: all 0.5s ease;
+    &:hover{
+        transform: scale(1.1, 1.1);
+    }
+}
+
+.icons img{
+    transform: scale(1, 1);
+    
+    transition: all 0.25s ease;
+    &:hover{
+        transform: scale(1.1, 1.1);
+    }
+}
+
+.footer__content a{
+    transform: scale(1, 1);
+    
+    transition: all 0.25s ease;
+    &:hover{
+        transform: scale(1.05, 1.05);
+    }
+}
